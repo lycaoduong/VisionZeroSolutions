@@ -30,3 +30,10 @@
 *.exe
 *.out
 *.app
+
+#Custom
+nx_kit
+nx_sdk
+build
+lib
+.vs
