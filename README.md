@@ -15,6 +15,17 @@
 
 ![VisionZero Team](./images/0_visionzero.png)
 
+## <span style="color:red">Demonstration</span>
+
+### *** **Demonstration Video + Presentation** ***
+  <!-- [![Watch the video](https://img.youtube.com/vi/NiLgZeHn2_Y/maxresdefault.jpg)](https://youtu.be/NiLgZeHn2_Y) -->
+  - View the presentation video here: [YouTube.](https://youtu.be/NiLgZeHn2_Y)
+  - Access the presentation PPTX here: [Download.](https://1drv.ms/f/c/ce0612f2b3535b28/EncUQu_jRvVGg_SI4giP0fYBJPQ-KoiUK2x8hp8428su4w?e=d6hAzN)
+
+### Supplementary Videos
+  - Video showcasing system testing (demo and test with speaker and signal tower): [Download.](https://1drv.ms/f/c/ce0612f2b3535b28/ElSEp7k5VptOsGebQLjgDa8BzS8-Yv_qQrdP5zDNZ6XOnw?e=R2ceLb)
+  - For system testing, we also utilized the video titled "thief_video3" from Laoode's GitHub repository, available https://github.com/Laoode/Theft_Detection/tree/main/Test%20Videos.
+
 ## <span style="color:red">Prerequisites</span>
 
 Ensure you have the following libraries and tools installed before proceeding:
@@ -170,17 +181,6 @@ Ensure you have the following libraries and tools installed before proceeding:
 <div align="left">
   <img src="./images/10_resultVLM.PNG" alt="Step 10" style="padding-left: 20px;"/>
 </div>
-
-## <span style="color:red">Demonstration Video and Supplementary</span>
-
-### Demonstration Video + Presentation
-  <!-- [![Watch the video](https://img.youtube.com/vi/NiLgZeHn2_Y/maxresdefault.jpg)](https://youtu.be/NiLgZeHn2_Y) -->
-  - View the presentation video here: [YouTube.](https://youtu.be/NiLgZeHn2_Y)
-  - Access the presentation PPTX here: [Download.](https://1drv.ms/f/c/ce0612f2b3535b28/EncUQu_jRvVGg_SI4giP0fYBJPQ-KoiUK2x8hp8428su4w?e=d6hAzN)
-
-### Additional Videos
-  - Video showcasing system testing (demo and test with speaker and signal tower): [Download.](https://1drv.ms/f/c/ce0612f2b3535b28/ElSEp7k5VptOsGebQLjgDa8BzS8-Yv_qQrdP5zDNZ6XOnw?e=R2ceLb)
-  - For system testing, we also utilized the video titled "thief_video3" from Laoode's GitHub repository, available https://github.com/Laoode/Theft_Detection/tree/main/Test%20Videos.
 
 ## <span style="color:red">Pretrained Models + Resources</span>
 
