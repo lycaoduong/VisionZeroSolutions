@@ -378,7 +378,12 @@ namespace nx {
             bool DeviceAgent::loadModel(fs::path model_dir, OnnxLoader::Model& onnxModel)
             {
                 OnnxLoader* modelLoader = new OnnxLoader();
-                bool isLoaded = modelLoader->loadModel(model_dir, "cuda", "0", onnxModel);
+                // For encrypt model
+                void const* mBuffer;
+                int bSize;
+                decryptModel(model_dir.string().c_str(), mBuffer, bSize);
+
+                bool isLoaded = modelLoader->loadModel(mBuffer, bSize, "cuda", "0", onnxModel);
                 return isLoaded;
             }
 

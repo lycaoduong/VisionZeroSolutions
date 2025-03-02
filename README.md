@@ -1,129 +1,137 @@
-# VisionZeroSolutions
+# VisionZero Team
+```
  NX Witness Hackathon 2025
+  ```
+  ![VisionZero Team](./images/0_visionzero.png)
 
 ## Prerequisites
 
 Ensure you have the following libraries and tools installed before proceeding:
 
-### For Building Plugin
+### *** For Building Plugin ***
 1. **Visual Studio 2019**  
-- Download and install Visual Studio 2019: [Visual Studio 2019](https://visualstudio.microsoft.com/vs/older-downloads/).
+  - Download and install Visual Studio 2019: [Visual Studio 2019](https://1drv.ms/f/c/ce0612f2b3535b28/En3xt3I7cZxNp-pGv2M-3l8BMJM2in2n2JlEV4K_ROYozA?e=P806eL).
 
 2. **VSCode + CMake**
-- Install Visual Studio Code (VSCode) from: [Visual Studio Code.](https://code.visualstudio.com/)
-- CMake and CMake Tools extension for VSCode are required for building and managing CMake projects.
-- Install the CMake extension for VSCode from the Extensions marketplace.
+  - Install Visual Studio Code (VSCode) from: [Visual Studio Code.](https://code.visualstudio.com/)
+  - Install Cmake: [CMake.](https://cmake.org/download/)
+  - CMake and CMake Tools extension for VSCode are required for building and managing CMake projects.
+  - Install the CMake extension for VSCode from the Extensions marketplace.
 
 3. **CUDA 11.8**
-- Download and install CUDA 11.8 for Windows: [CUDA 11.8](https:<>/).
+  - Download and install CUDA 11.8 for Windows: [CUDA 11.8](https://1drv.ms/f/c/ce0612f2b3535b28/EqqEpI3_XxdLm47FPppand4Bk5Nvrm904fxYWMkUa6hJyg?e=8BxINr).
 
-4. **CuDNN**
-- Download CuDNN for CUDA 11.8: [CuDNN](https:<>/).
-- Once you've downloaded CuDNN, extract the contents and copy the following folders to the CUDA installation directory:
-  ```
-  lib → C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\lib\x64
-  bin → C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin
-  include → C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include
+4. **CuDNN + TensorRT**
+  - Download CuDNN for CUDA 11.8: [CuDNN + TensorRT](https://1drv.ms/f/c/ce0612f2b3535b28/EirzojYzIwFKp0eOh47gT50BFk6Q5O7wdAvzX-BP8auiKw?e=XdUTaK).
+  - Once you've downloaded CuDNN, extract the contents and copy the following folders to the CUDA installation directory:
+    ```
+    lib → C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\lib\x64
+    bin → C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin
+    include → C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include
+  - If you're using TensorRT, follow the same steps as for CuDNN, but please note that we only tested with CuDNN.
 
-### For Testing Plugin
+### *** For Testing Plugin ***
 1. **NX Server and NX Client for Windows**
-   - Download and install NX Server and NX Client for Windows: [NX Server and NX Client.](https:<>/)
+   - Download and install NX Server and NX Client for Windows: [NX Server and NX Client.](https://1drv.ms/f/c/ce0612f2b3535b28/Ep2j4zZaO61Hra4qaP9SDZwBrpB_VlnTYWAxLig-vXju4w?e=XwXKX5)
 
 2. **VisionZero Team Plugin**
-- Download VisionZero Team Plugin from: [nx_plugin_clip.](https:<>/)
-- Paste the `nx_plugin_clip` folder into the plugins folder (After install NX Server)
-   ```
-   C:\Program Files\Network Optix\Nx Witness\MediaServer\plugins
-
+  - Download VisionZero Team Plugin from: [nx_plugin_clip.](https://1drv.ms/f/c/ce0612f2b3535b28/EjF5LLAzTQ1FvtBe-m6pmpwB6LVqDgOTXpeDC7h600lzyw?e=Ql4RXh)
+  - Paste the `nx_plugin_clip` folder into the plugins folder (After install NX Server)
+    ```
+    C:\Program Files\Network Optix\Nx Witness\MediaServer\plugins
 3. **Docker Desktop**
-- Install Docker Desktop from: [Docker Desktop.](https://www.docker.com/get-started/)
-- Follow the installation instructions on the page to set up Docker on your system.
+  - Install Docker Desktop from: [Docker Desktop.](https://www.docker.com/get-started/)
+  - Follow the installation instructions on the page to set up Docker on your system.
 
-4. **MariaDB**
-- Install MariaDB from: [MariaDB.](https:<>/)
+4. **CLIP-Textual Server**
+  - Download CLIP-Textual Server from: [CLIP-Textual Server.](https://1drv.ms/f/c/ce0612f2b3535b28/EpRWOD70I9RLn8E2rJaIMBIBkwYtviq-Nb7_K6yu3_gTVg?e=AtHDal)
 
-5. **FTP Server**
-- Download and run an FTP Server from: [FTP Server.](https:<>/)
+5. **HTTP SnapShot Server**
+  - Download and run an HTTP SnapShot Server from: [FTP Server.](https://1drv.ms/f/c/ce0612f2b3535b28/Er4SKk13YCNCtq9c7mOnG0sBrfUSR-kg8epz51G6Gai44Q?e=vjKBHS)
 
-6. **CLIP-Textual Server**
-- Download and run the CLIP-Textual Server from: [CLIP-Textual Server.](https:<>/)
+6. **MariaDB + SearchApp**
+  - Download docker-compose.yml from: [MariaDB + SearchApp.](https://1drv.ms/f/c/ce0612f2b3535b28/EjbrYDvg07FCi_RH0USOLycBvRacaGrFsA11O7p67nKXAA?e=W71VQH)
 
 7. **HuggingFace lycaoduong/InternVL2-1B-NXDemo Space access token**
-- To gain access to the HuggingFace space for InternVL2-1B-NXDemo, contact via email to get the access token: hf_<your token here> at lycaoduong@gmail.com.
-
+  - To gain access to the HuggingFace space for InternVL2-1B-NXDemo, contact via email to get the access token: hf_<your token here> at lycaoduong@gmail.com.
 
 ## Installation and Build Steps
 
 ### Step 1: Download and Prepare Dependencies
-- Download the required libraries (lib) Folder (includes `curl-7.86.0`, `eigen`, `mysql-8.0.32`, `onnxruntime`, `opencv`, `rapidjson`, and `spdlog-1.x`) and place them into the $(SolutionDir).
-- Download nx_kit and nx_sdk folders and place them into the $(SolutionDir).
-- Download and replace the latest Core (LVisLib.lib) and place them into the $(SolutionDir)core\LVisLib\lib folder.
+  - Download all dependencies from: [Dependencies](https://1drv.ms/f/c/ce0612f2b3535b28/EvhSMjMTzHNNlHssqj_R4HUBZf5iFn86Xin-3pvjNTNYmg?e=ytwwUu)
+  - Place 'lib' Folder (includes `curl-7.86.0`, `eigen`, `mysql-8.0.32`, `onnxruntime`, `opencv`, `rapidjson`, and `spdlog-1.x`) into the $(SolutionDir).
+  - Place 'nx_kit' and 'nx_sdk' folders into the $(SolutionDir).
+  - Place latest VisionZero's Core (LVisLib.lib) and place them into the $(SolutionDir)core\LVisLib\lib folder.
 
 ### Step 2: Set Up the CMake Configuration
-- Open the folder $(SolutionDir) in VS Code.
+  - Open the folder $(SolutionDir) in VS Code.
 
 ### Step 3: Configure the Build Kit
-- Press Ctrl + Shift + P and search for CMake: Select a Kit.
-- Choose Visual Studio 2019 (ensure that you select the x64 variant).
+  - Press Ctrl + Shift + P and search for CMake: Select a Kit.
+  - Choose Visual Studio 2019 (ensure that you select the x64 variant).
 
 ### Step 4: Configure and Build Using CMake
-- Press Ctrl + Shift + P, search for CMake: Configure, and select it to configure the build.
-- Press Ctrl + Shift + P, search for CMake: Select Build Variant, and select Release.
-- After configuration is complete, press Ctrl + Shift + P again and search for CMake: Build
-- Alternatively, you can run the build manually from the terminal by using the following command:
-  ```
-  cmake --build build --config Release
-
+  - Press Ctrl + Shift + P, search for CMake: Configure, and select it to configure the build.
+  - Press Ctrl + Shift + P, search for CMake: Select Build Variant, and select Release.
+  - After configuration is complete, press Ctrl + Shift + P again and search for CMake: Build
+  - Alternatively, you can run the build manually from the terminal by using the following command:
+    ```
+    cmake --build build --config Release
 ### Step 5: Deploy the Plugin
-- Copy the generated `nx_plugin_clip.dll` file from the build output directory:
-  ```
-  $(SolutionDir)\build\Release\
-
+  - Copy the generated `nx_plugin_clip.dll` file from the build output directory:
+    ```
+    $(SolutionDir)\build\Release\
 ### Step 6: Deploy the Plugin
-- Paste the `nx_plugin_clip.dll` file into the NX Plugin Server folder
-  ```
-  C:\Program Files\Network Optix\Nx Witness\MediaServer\plugins\nx_plugin_clip
-- Note: Stop the NX Server before overwriting the existing plugin file.
+  - Paste the `nx_plugin_clip.dll` file into the NX Plugin Server folder
+    ```
+    C:\Program Files\Network Optix\Nx Witness\MediaServer\plugins\nx_plugin_clip
+  - Note: Stop the NX Server before overwriting the existing plugin file.
 
 ## Testing Steps
 
-### Step 1: Run MariaDB Server
-- Run the MariaDB Server by executing <MariaDB>.exe. (Download exe here: )
-
-### Step 2: Run FTP Server
-- Run the FTP Server by executing <ftpServer>.exe. (Download exe here: )
-
-### Step 3: Run CLIP-Textual Server
-- Run the CLIP-Textual Server by executing <CLIP-Textual Server>.exe. (Download exe here: )
-
-### Step 4: Configure MariaDB, FTP, CLIP-Textual Server, and HuggingFace Server
-- Open the nx_plugin_clip.ini configuration file and set the necessary parameters like IP address, port, and access token for each service.
-- The nx_plugin_clip.ini file is located in the plugin folder:
-  ```
-  C:\Program Files\Network Optix\Nx Witness\MediaServer\plugins\nx_plugin_clip
-
-### Step 5: Run Web App Searching by Docker Compose
-- Start the container with docker-compose.yml to deploy the web application:
-  ```
-  docker-compose up -d
-
-### Step 6: Start Server and Enable Plugin
-- Enable the plugin on the desired camera through the Nx Witness interface.
-- Add the actions for detection from the UI settings.
-
-### Step 7: Search by Description
-- Open the Vector Search WebApp in your browser at:
-  ```
-  http://localhost:7860
-- Input a description (e.g., man in black clothes) to search and get the TOP-5 matching images.
+### Step 1: Configure Database Server IP, CLIP-Textual Server IP, Hugging Face Access Token, and Forward HTTP Snapshot Server
+  - Open the nx_plugin_clip.ini configuration file.
+  - The nx_plugin_clip.ini file is located in the plugin directory:
+    ```
+    C:\Program Files\Network Optix\Nx Witness\MediaServer\plugins\nx_plugin_clip
+  - Check your Server IP using the following command:
+    ``` bash
+    ipconfig
+  - Set the Database Server IP in nx_plugin_clip.ini to match your Server IP.
+  - Set the CLIP-Textual Server IP in nx_plugin_clip.ini to match your Server IP.
+  - Configure the Hugging Face access token in nx_plugin_clip.ini.
+  - Forward the HTTP Image Storage Server port and set your public IP address to allow Hugging Face Space to access stored data.
+    ![Step 1](./images/1_ini.PNG)
+### Step 2: Run CLIP-Textual Server
+  - Start the CLIP-Textual Server.
+    ![Step 2](./images/2_clipServer.PNG)
+### Step 3: Run FTP Server
+  - Start HTTP Snapshot Server.
+    ![Step 3](./images/3_httpServer.PNG)
+### Step 4: Run MariaDB Server and Search App
+  - Navigate to the directory containing docker-compose.yml and start the container:
+    ``` bash
+    docker compose up -d
+    ```
+    ![Step 4](./images/4_runContainer.PNG)
+### Step 5: Check DB Status
+- Open the search app container logs from Docker Desktop to confirm the database status. If the database is not running, restart the search app container.
+![Step 5](./images/5_searchAppLogs.PNG)
+### Step 6: Start Server, set ROI and Enable Plugin
+![Step 6](./images/6_getDetect.PNG)
+### Step 7: Add Actions to detect
+![Step 7](./images/7_getnewResult.PNG)
+### Attempt a query search within the search application located at http://localhost:7860.
+![Step 8](./images/8_search.PNG)
+### Verify the snapshot images from the {HTTP Image Storage Server Dir}/CameraName/data directory.
+![Step 9](./images/9_snapShot.PNG)
+### Verify the image description result generated by the Vision Language Model (VLM) from the database.
+![Step 10](./images/10_resultVLM.PNG)
 
 ## Supplementary
 
-### Testing Video
-- You can download the testing videos from the following link: <>
-
 ### Presentation and Demo Video
-- Watch the presentation video here: <>
+- Watch the presentation video here: [YouTube.]()
 
 ## Models + Resources
 

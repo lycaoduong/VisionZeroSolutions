@@ -132,10 +132,10 @@ namespace nx {
                 Engine* m_engine;
             private:
                 OnnxLoader::Model m_Detmodel;
-                fs::path m_DetmodelName = fs::path("coco.onnx");
+                fs::path m_DetmodelName = fs::path("coco.visionzero");
 
                 OnnxLoader::Model m_ClipVisualmodel;
-                fs::path m_ClipVisualmodelName = fs::path("clip_visualL.onnx");
+                fs::path m_ClipVisualmodelName = fs::path("clip_visualL.visionzero");
 
                 std::vector<std::string> trackingBuffer;
                 int maxTrackingBuffer = 30;
