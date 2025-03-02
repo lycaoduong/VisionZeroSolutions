@@ -69,7 +69,7 @@ Ensure you have the following libraries and tools installed before proceeding:
     - Download CLIP-Textual Server from: [CLIP-Textual Server.](https://1drv.ms/f/c/ce0612f2b3535b28/EpRWOD70I9RLn8E2rJaIMBIBkwYtviq-Nb7_K6yu3_gTVg?e=AtHDal)
 
 5. **HTTP SnapShot Server**
-    - Download and run an HTTP SnapShot Server from: [FTP Server.](https://1drv.ms/f/c/ce0612f2b3535b28/Er4SKk13YCNCtq9c7mOnG0sBrfUSR-kg8epz51G6Gai44Q?e=vjKBHS)
+    - Download and run an HTTP SnapShot Server from: [HTTP Server.](https://1drv.ms/f/c/ce0612f2b3535b28/Er4SKk13YCNCtq9c7mOnG0sBrfUSR-kg8epz51G6Gai44Q?e=vjKBHS)
 
 6. **MariaDB + SearchApp**
     - Download docker-compose.yml from: [MariaDB + SearchApp.](https://1drv.ms/f/c/ce0612f2b3535b28/EjbrYDvg07FCi_RH0USOLycBvRacaGrFsA11O7p67nKXAA?e=W71VQH)
