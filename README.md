@@ -1,5 +1,5 @@
 <div align="center">
-  <h1><span style="color:red">*** VisionZero Team ***</span></h1>
+  <h1><span style="color:red">*** **VisionZero Team** ***</span></h1>
   <p><a href="https://lycaoduong.github.io/">Cao Duong Ly</a>, <a href="https://github.com/LuciusMagnus">LuciusMagnus</a></p>
   <p> NX Witness Hackathon 2025 </p>
   <p>
@@ -19,52 +19,55 @@
 
 Ensure you have the following libraries and tools installed before proceeding:
 
-### *** For Building Plugin ***
+### *** **For Building Plugin** ***
 1. **Visual Studio 2019**  
-  - Download and install Visual Studio 2019: [Visual Studio 2019](https://1drv.ms/f/c/ce0612f2b3535b28/En3xt3I7cZxNp-pGv2M-3l8BMJM2in2n2JlEV4K_ROYozA?e=P806eL).
+    - Download and install Visual Studio 2019: [Visual Studio 2019](https://1drv.ms/f/c/ce0612f2b3535b28/En3xt3I7cZxNp-pGv2M-3l8BMJM2in2n2JlEV4K_ROYozA?e=P806eL).
 
 2. **VSCode + CMake**
-  - Install Visual Studio Code (VSCode) from: [Visual Studio Code.](https://code.visualstudio.com/)
-  - Install Cmake: [CMake.](https://cmake.org/download/)
-  - CMake and CMake Tools extension for VSCode are required for building and managing CMake projects.
-  - Install the CMake extension for VSCode from the Extensions marketplace.
+    - Install Visual Studio Code (VSCode) from: [Visual Studio Code.](https://code.visualstudio.com/)
+    - Install Cmake: [CMake.](https://cmake.org/download/)
+    - CMake and CMake Tools extension for VSCode are required for building and managing CMake projects.
+    - Install the CMake extension for VSCode from the Extensions marketplace.
 
 3. **CUDA 11.8**
-  - Download and install CUDA 11.8 for Windows: [CUDA 11.8](https://1drv.ms/f/c/ce0612f2b3535b28/EqqEpI3_XxdLm47FPppand4Bk5Nvrm904fxYWMkUa6hJyg?e=8BxINr).
+    - Download and install CUDA 11.8 for Windows: [CUDA 11.8](https://1drv.ms/f/c/ce0612f2b3535b28/EqqEpI3_XxdLm47FPppand4Bk5Nvrm904fxYWMkUa6hJyg?e=8BxINr).
 
 4. **CuDNN + TensorRT**
-  - Download CuDNN for CUDA 11.8: [CuDNN + TensorRT](https://1drv.ms/f/c/ce0612f2b3535b28/EirzojYzIwFKp0eOh47gT50BFk6Q5O7wdAvzX-BP8auiKw?e=XdUTaK).
-  - Once you've downloaded CuDNN, extract the contents and copy the following folders to the CUDA installation directory:
-    ```
-    lib → C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\lib\x64
-    bin → C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin
-    include → C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include
-  - If you're using TensorRT, follow the same steps as for CuDNN, but please note that we only tested with CuDNN.
+    - Download CuDNN for CUDA 11.8: [CuDNN + TensorRT](https://1drv.ms/f/c/ce0612f2b3535b28/EirzojYzIwFKp0eOh47gT50BFk6Q5O7wdAvzX-BP8auiKw?e=XdUTaK).
+    - Once you've downloaded CuDNN, extract the contents and copy the following folders to the CUDA installation directory:
+      ```
+      lib → C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\lib\x64
+      bin → C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin
+      include → C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include
+    - If you're using TensorRT, follow the same steps as for CuDNN, but please note that we only tested with CuDNN.
 
-### *** For Testing Plugin ***
+### *** **For Testing Plugin** ***
 1. **NX Server and NX Client for Windows**
-   - Download and install NX Server and NX Client for Windows: [NX Server and NX Client.](https://1drv.ms/f/c/ce0612f2b3535b28/Ep2j4zZaO61Hra4qaP9SDZwBrpB_VlnTYWAxLig-vXju4w?e=XwXKX5)
+     - Download and install NX Server and NX Client for Windows: [NX Server and NX Client.](https://1drv.ms/f/c/ce0612f2b3535b28/Ep2j4zZaO61Hra4qaP9SDZwBrpB_VlnTYWAxLig-vXju4w?e=XwXKX5)
 
 2. **VisionZero Team Plugin**
-  - Download VisionZero Team Plugin from: [nx_plugin_clip.](https://1drv.ms/f/c/ce0612f2b3535b28/EjF5LLAzTQ1FvtBe-m6pmpwB6LVqDgOTXpeDC7h600lzyw?e=Ql4RXh)
-  - Paste the `nx_plugin_clip` folder into the plugins folder (After install NX Server)
-    ```
-    C:\Program Files\Network Optix\Nx Witness\MediaServer\plugins
+    - Download VisionZero Team Plugin from: [nx_plugin_clip.](https://1drv.ms/f/c/ce0612f2b3535b28/EjF5LLAzTQ1FvtBe-m6pmpwB6LVqDgOTXpeDC7h600lzyw?e=Ql4RXh)
+    - Paste the `nx_plugin_clip` folder into the plugins folder (After install NX Server)
+      ```
+      C:\Program Files\Network Optix\Nx Witness\MediaServer\plugins
 3. **Docker Desktop**
-  - Install Docker Desktop from: [Docker Desktop.](https://www.docker.com/get-started/)
-  - Follow the installation instructions on the page to set up Docker on your system.
+    - Install Docker Desktop from: [Docker Desktop.](https://www.docker.com/get-started/)
+    - Follow the installation instructions on the page to set up Docker on your system.
 
 4. **CLIP-Textual Server**
-  - Download CLIP-Textual Server from: [CLIP-Textual Server.](https://1drv.ms/f/c/ce0612f2b3535b28/EpRWOD70I9RLn8E2rJaIMBIBkwYtviq-Nb7_K6yu3_gTVg?e=AtHDal)
+    - Download CLIP-Textual Server from: [CLIP-Textual Server.](https://1drv.ms/f/c/ce0612f2b3535b28/EpRWOD70I9RLn8E2rJaIMBIBkwYtviq-Nb7_K6yu3_gTVg?e=AtHDal)
 
 5. **HTTP SnapShot Server**
-  - Download and run an HTTP SnapShot Server from: [FTP Server.](https://1drv.ms/f/c/ce0612f2b3535b28/Er4SKk13YCNCtq9c7mOnG0sBrfUSR-kg8epz51G6Gai44Q?e=vjKBHS)
+    - Download and run an HTTP SnapShot Server from: [FTP Server.](https://1drv.ms/f/c/ce0612f2b3535b28/Er4SKk13YCNCtq9c7mOnG0sBrfUSR-kg8epz51G6Gai44Q?e=vjKBHS)
 
 6. **MariaDB + SearchApp**
-  - Download docker-compose.yml from: [MariaDB + SearchApp.](https://1drv.ms/f/c/ce0612f2b3535b28/EjbrYDvg07FCi_RH0USOLycBvRacaGrFsA11O7p67nKXAA?e=W71VQH)
+    - Download docker-compose.yml from: [MariaDB + SearchApp.](https://1drv.ms/f/c/ce0612f2b3535b28/EjbrYDvg07FCi_RH0USOLycBvRacaGrFsA11O7p67nKXAA?e=W71VQH)
 
 7. **HuggingFace lycaoduong/InternVL2-1B-NXDemo Space access token**
-  - To gain access to the HuggingFace space for InternVL2-1B-NXDemo, contact via email to get the access token: hf_<your token here> at lycaoduong@gmail.com.
+    - To gain access to the HuggingFace space for InternVL2-1B-NXDemo, contact via email to get the access token: hf_<your token here> at lycaoduong@gmail.com.
+8. Download and Test NxTestcamera with Videos
+    - Download NxTestcamera and the testing videos: [NxTestcamera and Testing Videos](https://1drv.ms/f/c/ce0612f2b3535b28/EkYyy5y5UJBBsujED59MvZ0BQVxXhV1BBFpAOPm1ElJfpQ?e=cAZUh0)
+    - Use NxTestcamera to stream videos to the RTSP camera following the NX Witness Guidelines.
 
 ## <span style="color:red">Installation and Build Steps</span>
 
@@ -168,10 +171,16 @@ Ensure you have the following libraries and tools installed before proceeding:
   <img src="./images/10_resultVLM.PNG" alt="Step 10" style="padding-left: 20px;"/>
 </div>
 
-## <span style="color:red">Supplementary</span>
+## <span style="color:red">Demonstration Video and Supplementary</span>
 
-### Presentation and Demo Video
-- Watch the presentation video here: [YouTube.]()
+### Demonstration Video + Presentation
+  <!-- [![Watch the video](https://img.youtube.com/vi/NiLgZeHn2_Y/maxresdefault.jpg)](https://youtu.be/NiLgZeHn2_Y) -->
+  - View the presentation video here: [YouTube.](https://youtu.be/NiLgZeHn2_Y)
+  - Access the presentation PPTX here: [Download.](https://1drv.ms/f/c/ce0612f2b3535b28/EncUQu_jRvVGg_SI4giP0fYBJPQ-KoiUK2x8hp8428su4w?e=d6hAzN)
+
+### Additional Videos
+  - Video showcasing system testing (demo and test with speaker and signal tower): [Download.](https://1drv.ms/f/c/ce0612f2b3535b28/ElSEp7k5VptOsGebQLjgDa8BzS8-Yv_qQrdP5zDNZ6XOnw?e=R2ceLb)
+  - For system testing, we also utilized the video titled "thief_video3" from Laoode's GitHub repository, available https://github.com/Laoode/Theft_Detection/tree/main/Test%20Videos.
 
 ## <span style="color:red">Pretrained Models + Resources</span>
 
