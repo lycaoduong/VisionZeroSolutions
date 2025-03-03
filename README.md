@@ -23,7 +23,7 @@
   - Access the presentation PPTX here: [Download.](https://1drv.ms/f/c/ce0612f2b3535b28/EncUQu_jRvVGg_SI4giP0fYBJPQ-KoiUK2x8hp8428su4w?e=d6hAzN)
 
 ### Supplementary Videos
-  - Video showcasing system testing (demo and test with speaker and signal tower): [Download.](https://1drv.ms/f/c/ce0612f2b3535b28/ElSEp7k5VptOsGebQLjgDa8BzS8-Yv_qQrdP5zDNZ6XOnw?e=R2ceLb)
+  - Video showcasing system testing (demo and test with signal tower): [Download.](https://1drv.ms/f/c/ce0612f2b3535b28/ElSEp7k5VptOsGebQLjgDa8BzS8-Yv_qQrdP5zDNZ6XOnw?e=R2ceLb)
   - For system testing, we also utilized the video titled "thief_video3" from Laoode's GitHub repository, available https://github.com/Laoode/Theft_Detection/tree/main/Test%20Videos.
 
 ## <span style="color:red">Prerequisites</span>
