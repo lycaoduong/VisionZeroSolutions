@@ -161,6 +161,7 @@ Ensure you have the following libraries and tools installed before proceeding:
   </div>
 
 ### Step 4: Run MariaDB Server and Search App
+  - Run Docker Desktop as an administrator to gain permission to write to the plugin folder.
   - Navigate to the directory where the docker-compose.yml file is located.
   - Ensure that the nx_plugin_clip.sql already exists at:
     ``` bash
