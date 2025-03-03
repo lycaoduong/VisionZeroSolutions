@@ -76,6 +76,7 @@ Ensure you have the following libraries and tools installed before proceeding:
 
 7. **HuggingFace lycaoduong/InternVL2-1B-NXDemo Space access token**
     - To gain access to the HuggingFace space for InternVL2-1B-NXDemo, contact via email to get the access token: hf_{your_token_here} at lycaoduong@gmail.com.
+    - If our HF Space and Model are set to public, you can skip this step.
 8. Download and Test NxTestcamera with Videos
     - Download NxTestcamera and the testing videos: [NxTestcamera and Testing Videos](https://1drv.ms/f/c/ce0612f2b3535b28/EkYyy5y5UJBBsujED59MvZ0BQVxXhV1BBFpAOPm1ElJfpQ?e=cAZUh0)
     - Use NxTestcamera to stream videos to the RTSP camera following the NX Witness Guidelines.
@@ -134,6 +135,7 @@ Ensure you have the following libraries and tools installed before proceeding:
     db_ip_address={Your IP Address}
     clip_port=8077
   - Configure the Hugging Face access token in nx_plugin_clip.ini.
+  - If our HF Space and Model are set to public, you can skip this step.
     ```
     access_url=lycaoduong-internvl2-1b-nxdemo.hf.space
     access_key={Your access Token: hf_xxx}
