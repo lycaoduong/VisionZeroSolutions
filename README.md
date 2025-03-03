@@ -75,7 +75,7 @@ Ensure you have the following libraries and tools installed before proceeding:
     - Download docker-compose.yml from: [MariaDB + SearchApp.](https://1drv.ms/f/c/ce0612f2b3535b28/EjbrYDvg07FCi_RH0USOLycBvRacaGrFsA11O7p67nKXAA?e=W71VQH)
 
 7. **HuggingFace lycaoduong/InternVL2-1B-NXDemo Space access token**
-    - To gain access to the HuggingFace space for InternVL2-1B-NXDemo, contact via email to get the access token: hf_{your_token_here} at lycaoduong@gmail.com.
+    - To gain access to the HuggingFace space for [InternVL2-1B-NXDemo](https://huggingface.co/spaces/lycaoduong/InternVL2-1B-NXDemo), contact via email to get the access token: hf_{your_token_here} at lycaoduong@gmail.com.
     - If our HF Space and Model are set to public, you can skip this step.
 8. Download and Test NxTestcamera with Videos
     - Download NxTestcamera and the testing videos: [NxTestcamera and Testing Videos](https://1drv.ms/f/c/ce0612f2b3535b28/EkYyy5y5UJBBsujED59MvZ0BQVxXhV1BBFpAOPm1ElJfpQ?e=cAZUh0)
