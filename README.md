@@ -123,10 +123,28 @@ Ensure you have the following libraries and tools installed before proceeding:
     ``` bash
     ipconfig
   - Set the Database Server IP in nx_plugin_clip.ini to match your Server IP.
+      ``` bash
+    db_ip_address={Your IP Address}
+    db_port=3306
+    db_user_id=root
+    db_user_password=admin123
+    db_name=nx_plugin_clip
   - Set the CLIP-Textual Server IP in nx_plugin_clip.ini to match your Server IP.
+    ``` bash
+    db_ip_address={Your IP Address}
+    clip_port=8077
   - Configure the Hugging Face access token in nx_plugin_clip.ini.
+    ```
+    access_url=lycaoduong-internvl2-1b-nxdemo.hf.space
+    access_key={Your access Token: hf_xxx}
+    access_resource_path=/gradio_api/call/chat
+  - Configure the HTTP Server Image Storage Directory
   - Forward the HTTP Image Storage Server port and set your public IP address to allow Hugging Face Space to access stored data.
-
+      ```
+    http_local_storage_dir=${HTTP Image Server Dir}/data
+    http_ip_address={Your Public IP address: 210.xxx}
+    http_port=8000
+    http_resource_path=/data
   <div align="center">
     <img src="./images/1_ini.PNG" alt="Step 1" style="padding-left: 20px;"/>
   </div>
