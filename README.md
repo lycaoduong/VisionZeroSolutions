@@ -144,7 +144,9 @@ Ensure you have the following libraries and tools installed before proceeding:
 
 ### Step 4: Run MariaDB Server and Search App
   - Navigate to the directory where the docker-compose.yml file is located.
-  - Ensure that the nx_plugin_clip.sql already exists at C:\Program Files\Network Optix\Nx Witness\MediaServer\plugins\nx_plugin_clip. 
+  - Ensure that the nx_plugin_clip.sql already exists at:
+    ``` bash
+    C:\Program Files\Network Optix\Nx Witness\MediaServer\plugins\nx_plugin_clip
   - Then, run the following command to start the container:
     ``` bash
     docker compose up -d
