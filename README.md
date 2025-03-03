@@ -1,7 +1,7 @@
 <div align="center">
-  <h1><span style="color:red">*** **VisionZero Team** ***</span></h1>
+  <h1><span style="color:red">*** ** VisionZero Team ** ***</span></h1>
   <p><a href="https://lycaoduong.github.io/">Cao Duong Ly</a>, <a href="https://github.com/LuciusMagnus">LuciusMagnus</a></p>
-  <p> NX Witness Hackathon 2025 </p>
+  <p> Nx Venue Innovation Hackathon 2025 </p>
   <p>
   <img src="https://img.shields.io/badge/C++-00599C?style=flat&logo=c%2B%2B&logoColor=white" alt="C++">
   <img src="https://img.shields.io/badge/CMake-064F8C?style=flat&logo=cmake&logoColor=white" alt="CMake">
