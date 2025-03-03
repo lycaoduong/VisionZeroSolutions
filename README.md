@@ -159,7 +159,11 @@ Ensure you have the following libraries and tools installed before proceeding:
   <img src="./images/5_searchAppLogs.PNG" alt="Step 5" style="padding-left: 20px;"/>
 </div>
 
-### Step 6: Start Server, set ROI and Enable Plugin
+### Step 6: Start Server, set RoI (Region of Interest) and Enable Plugin
+- Ensure that the nx_plugin_clip.ini file is correctly configured in the plugin directory with your Server IP address, Hugging Face access token, and that your HTTP Storage Image Server is port-forwarded.
+- Additionally, start the following services before running the NX Server: **CLIP-Textual, HTTP Storage Image, and MariaDB container**.
+- Without a Hugging Face access token, the system will be unable to retrieve descriptions for each event, preventing query-based searches later.
+- [Optional] Experience our Hugging Face InternVL2.5-1B integration for NX Witness here: [Hf Space](https://huggingface.co/spaces/lycaoduong/InternVL2-1B-NXDemo)
 <div align="left">
   <img src="./images/6_getDetect.PNG" alt="Step 6" style="padding-left: 20px;"/>
 </div>
