@@ -181,7 +181,7 @@ Ensure you have the following libraries and tools installed before proceeding:
 ### Step 9: Verify the snapshot images from the HTTP Image Storage Server
 - Directory:
   ```
-  ${HTTPServerDir}/CameraName/data
+  ${HTTPServerDir}/data/CameraName
 <div align="left">
   <img src="./images/9_snapShot.PNG" alt="Step 9" style="padding-left: 20px;"/>
 </div>
