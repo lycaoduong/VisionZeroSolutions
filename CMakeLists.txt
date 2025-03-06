@@ -8,7 +8,7 @@ set(CMAKE_BUILD_TYPE "Release" CACHE STRING "Choose the type of build." FORCE)
 
 project(nx_plugin_clip)
 message(STATUS "PROJECT_NAME = ${CMAKE_PROJECT_NAME}")
-add_definitions(-DPROJECT_NAME="nx_plugin_clip" -DHAS_CPP17)
+add_definitions(-DPROJECT_NAME="${PROJECT_NAME}" -DHAS_CPP17)
 
 
 #Find NX SDK
@@ -123,13 +123,16 @@ set(visionZero_SRC_DIR ${CMAKE_CURRENT_LIST_DIR}/src)
 file(GLOB_RECURSE visionZero_PLUGIN_SRC CONFIGURE_DEPENDS ${visionZero_SRC_DIR}/*.cpp)
 
 # Create a shared library from the source files
-add_library(nx_plugin_clip SHARED ${visionZero_PLUGIN_SRC})
+add_library(${PROJECT_NAME} SHARED 
+            ${visionZero_PLUGIN_SRC}
+            ${CMAKE_SOURCE_DIR}/version.rc  # Include version.rc
+            )
 
 # Specify the include directories (headers for your plugin)
-target_include_directories(nx_plugin_clip PRIVATE ${visionZero_SRC_DIR})
+target_include_directories(${PROJECT_NAME} PRIVATE ${visionZero_SRC_DIR})
 
 # Link the dependencies
-target_link_libraries(nx_plugin_clip PRIVATE 
+target_link_libraries(${PROJECT_NAME} PRIVATE 
     nx_kit
     nx_sdk
     ${Onnx_LIB_FILES}       # Ensure this is a list of `.lib` files
@@ -140,5 +143,5 @@ target_link_libraries(nx_plugin_clip PRIVATE
 )
 
 # Ensure proper API export macro for plugin
-target_compile_definitions(nx_plugin_clip PRIVATE NX_PLUGIN_API=${API_EXPORT_MACRO})
+target_compile_definitions(${PROJECT_NAME} PRIVATE NX_PLUGIN_API=${API_EXPORT_MACRO})
                        
