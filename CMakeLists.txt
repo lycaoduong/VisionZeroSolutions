@@ -128,6 +128,17 @@ add_library(${PROJECT_NAME} SHARED
             ${CMAKE_SOURCE_DIR}/version.rc  # Include version.rc
             )
 
+# Set version properties for the DLL
+# Set project version
+set(PROJECT_VERSION_MAJOR 1)
+set(PROJECT_VERSION_MINOR 0)
+set(PROJECT_VERSION_PATCH 0)
+
+set_target_properties(${PROJECT_NAME} PROPERTIES
+    VERSION ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJECT_VERSION_PATCH}
+    SOVERSION ${PROJECT_VERSION_MAJOR}
+)
+
 # Specify the include directories (headers for your plugin)
 target_include_directories(${PROJECT_NAME} PRIVATE ${visionZero_SRC_DIR})
 
