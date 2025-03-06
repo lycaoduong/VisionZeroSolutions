@@ -3,7 +3,7 @@
 #define VER_FILEVERSION             1,0,0,0
 #define VER_FILEVERSION_STR         "1.0.0.250306\0"
 
-#define VER_COPYRIGHT_STR           "Copyright © 2025 VVisionZero Team. All Rights Reserved.\0"
+#define VER_COPYRIGHT_STR           "Copyright © 2025 VisionZero Team. All Rights Reserved.\0"
 #define VER_TRADEMARKS_STR          "VisionZero™\0"
 
 VS_VERSION_INFO VERSIONINFO
