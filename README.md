@@ -1,5 +1,5 @@
 <div align="center">
-  <h1><span style="color:red">*** ** VisionZero Team ** ***</span></h1>
+  <h1><span style="color:red">*** ** Vision Zero - Multimodal AI-Driven Safety and Security Enhancement ** ***</span></h1>
   <p><a href="https://lycaoduong.github.io/">Cao Duong Ly</a>, <a href="https://github.com/LuciusMagnus">LuciusMagnus</a></p>
   <p> Nx Venue Innovation Hackathon 2025 </p>
   <p>
