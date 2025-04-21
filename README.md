@@ -1,10 +1,7 @@
 <div align="center">
-  <h1><span style="color:red">*** ** Vision Zero - Multimodal AI-Driven Safety and Security Enhancement ** ***</span></h1>
+  <h1><span style="color:red"><strong>*** Vision Zero - Multimodal AI-Driven Safety and Security Enhancement ***</strong></span></h1>
   <p><a href="https://lycaoduong.github.io/">Cao Duong Ly</a>, <a href="https://github.com/LuciusMagnus">LuciusMagnus</a></p>
-  <p> Nx Venue Innovation Hackathon 2025 </p>
-  <p>
-  <p>Rank 2nd 🥈</p>
-  </p>
+  <p> <strong>Achieved second place in Nx Venue Innovation Hackathon 2025 🥈🥈🥈 </strong></p>
   <p>
   <img src="https://img.shields.io/badge/C++-00599C?style=flat&logo=c%2B%2B&logoColor=white" alt="C++">
   <img src="https://img.shields.io/badge/CMake-064F8C?style=flat&logo=cmake&logoColor=white" alt="CMake">
